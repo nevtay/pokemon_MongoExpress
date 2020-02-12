@@ -5,6 +5,6 @@ require("dotenv").config()
 const PORT = 3000
 
 
-app.listen(PORT, () => {
-  console.log(`Server start liao on http://localhost:${PORT}`)
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Express lab started on http://localhost:${PORT}`)
 })
