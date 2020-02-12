@@ -5,6 +5,6 @@ require("dotenv").config()
 const PORT = 3000
 
 
-app.listen(process.env.PORT || PORT, () => {
+const server = app.listen(process.env.PORT || PORT, () => {
   console.log(`Express lab started on http://localhost:${PORT}`)
 })
